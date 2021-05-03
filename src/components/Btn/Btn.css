@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crafty+Girls&family=Dawning+of+a+New+Day&display=swap');
 
 .btnStyle {
-    
+
     height: 2em;
     width: 10em;
     background-color: white;
@@ -14,7 +14,7 @@
 
     border-radius: 25em;
 
-    font-family: 'Dawning of a New Day', cursive;
+    font-family: 'Crafty Girls', cursive;
     font-weight: bold;
     color: #74B4E2;
 

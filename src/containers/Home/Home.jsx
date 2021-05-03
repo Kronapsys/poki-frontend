@@ -5,16 +5,16 @@ import Btn from '../../components/Btn/Btn';
 
 const Home = () => {
     return(
-        <div className="home">
+        <div className='home'>
 
-            <div className="form">
+            <div className='form'>
 
-                <div className="logo">
+                <div className='logo'>
                     <img src={logo} alt='logo'/>
                     <p className='nombreLogo'>~ P O K I ~</p>
                 </div>
 
-                <div className="formButtons">
+                <div className='formButtons'>
                     <Btn nombre = 'Entrar' destination='logIn'/>
                     <Btn nombre = 'Registrarse' destination='register'/>
                 </div>

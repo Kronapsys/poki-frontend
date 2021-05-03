@@ -5,27 +5,28 @@ import Btn from '../../components/Btn/Btn';
 
 const Register = () => {
     return(
-        <div className="register">
+        <div className='register'>
 
-            <div className="form">
+            <div className='form'>
 
-                <div className="logo">
+                <div className='logo'>
                     <img src={logo} alt='logo'/>
+                    <p className='nombreLogo'>~ P O K I ~</p>
                 </div>
 
-                <div className="formRegister">
+                <div className='formRegister'>
 
                     <input className='input' type='text' name='name' title='Name' placeholder='Nombre' lenght='30' />
 
-                    <div className="doubleInput">
+                    <div className='doubleInput'>
                         <input className='input' type='text' name='surname1' title='Surname_1' placeholder='Apellido 1' lenght='30' />
                         <input className='input' type='text' name='surname2' title='Surname_2' placeholder='Apellido 2' lenght='30' />
                     </div>
                     
                     <input className='input' type='text' name='address' title='Address' placeholder='Dirección' lenght='50' />
 
-                    <div className="doubleInput">
-                        <input className='input' type='text' name='dni' title='DNI' placeholder='dni / nif' lenght='10' />
+                    <div className='doubleInput'>
+                        <input className='input' type='text' name='dni' title='DNI' placeholder='DNI / NIE' lenght='10' />
                         <input className='input' type='text' name='phone' title='Phone' placeholder='Teléfono' lenght='9' />
                     </div>
                     
@@ -34,7 +35,7 @@ const Register = () => {
 
                 </div>
 
-                <div className="formButtons">
+                <div className='formButtons'>
                     <Btn nombre = 'Darse de alta' destination=''/>
                 </div>
                 

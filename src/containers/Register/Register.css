@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crafty+Girls&family=Dawning+of+a+New+Day&display=swap');
 
 .register {
     height: 100vh;
@@ -34,7 +34,7 @@
     border: none;
     width: 16em;
 
-    font-family: 'Dawning of a New Day', cursive;
+    font-family: 'Crafty Girls', cursive;
     font-weight: bold;
     color: #74B4E2;
 }
