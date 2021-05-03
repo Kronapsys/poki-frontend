@@ -1,7 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Home from './containers/Home/Home';
+import Register from './containers/Register/Register';
 
 function App() {
   return (
@@ -10,7 +10,8 @@ function App() {
       
         <Switch>
           <Route path='/' exact component = {Home}/>
-
+          <Route path='/register' exact component = {Register}/>
+          
         </Switch>
       
       </BrowserRouter>

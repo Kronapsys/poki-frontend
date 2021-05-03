@@ -11,6 +11,7 @@ const Home = () => {
 
                 <div className="logo">
                     <img src={logo} alt='logo'/>
+                    <p className='nombreLogo'>~ P O K I ~</p>
                 </div>
 
                 <div className="formButtons">
@@ -18,7 +19,6 @@ const Home = () => {
                     <Btn nombre = 'Registrarse' destination='register'/>
                 </div>
             </div>
-            
         </div>
     );
 };
