@@ -5,19 +5,21 @@ import Btn from '../../components/Btn/Btn';
 
 const Home = () => {
     return(
-        
         <div className="home">
-            <div className="logo">
-                <img src={logo} alt='logo'/>
-            </div>
 
-            <div className="buttons">
-                <Btn nombre = 'ENTRAR' destination='logIn'/>
-                <Btn nombre = 'REGISTRARSE' destination='register'/>
+            <div className="form">
+
+                <div className="logo">
+                    <img src={logo} alt='logo'/>
+                </div>
+
+                <div className="formButtons">
+                    <Btn nombre = 'Entrar' destination='logIn'/>
+                    <Btn nombre = 'Registrarse' destination='register'/>
+                </div>
             </div>
+            
         </div>
-        
-
     );
 };
 

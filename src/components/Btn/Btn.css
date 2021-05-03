@@ -1,3 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap');
+
 .btnStyle {
     
+    height: 2em;
+    width: 10em;
+    background-color: white;
+    margin: 0.5em;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 25em;
+
+    font-family: 'Dawning of a New Day', cursive;
+    font-weight: bold;
+    color: #74B4E2;
+
+    cursor: pointer;
 }
