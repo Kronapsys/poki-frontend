@@ -1,0 +1,13 @@
+.home {
+    border: 0.2em solid red;
+    height: 100vh;
+    width: 25em;
+
+    background-color: #CCEBF1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+}
