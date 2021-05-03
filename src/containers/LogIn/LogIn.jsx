@@ -2,15 +2,23 @@ import React from 'react';
 import './LogIn.css';
 import logo from '../../img/logo.png';
 import Btn from '../../components/Btn/Btn';
+import {useHistory} from 'react-router-dom';
 
 const LogIn = () => {
+
+    let history = useHistory();
+
+    const homeRedirect = () => {
+        history.push(`/`);
+    };
+
     return(
         <div className='home'>
 
             <div className='form'>
 
                 <div className='logo'>
-                    <img src={logo} alt='logo'/>
+                    <img src={logo} alt='logo' onClick={homeRedirect}/>
                     <p className='nombreLogo'>~ P O K I ~</p>
                 </div>
 
@@ -20,7 +28,7 @@ const LogIn = () => {
                 </div>
 
                 <div className='formButtons'>
-                    <Btn nombre = 'Entrar' destination='logIn'/>
+                    <Btn nombre='Entrar' destination='logIn'/>
                 </div>
             </div>
         </div>
