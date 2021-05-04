@@ -3,7 +3,7 @@
 .btnStyle {
 
     height: 2em;
-    width: 10em;
+    width: 12em;
     background-color: white;
     margin: 0.5em;
 
@@ -19,4 +19,9 @@
     color: #74B4E2;
 
     cursor: pointer;
+}
+
+.btnStyle:hover {
+    background-color: #74B4E2;
+    color: white;
 }

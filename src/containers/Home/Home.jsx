@@ -2,8 +2,13 @@ import React from 'react';
 import './Home.css';
 import logo from '../../img/logo.png';
 import Btn from '../../components/Btn/Btn';
+// import axios from 'axios';
 
 const Home = () => {
+
+    // let a = axios.get('http://localhost:3000/parents');
+    // console.log(a);
+
     return(
         <div className='home'>
 
