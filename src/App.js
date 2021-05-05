@@ -4,7 +4,7 @@ import Home from './containers/Home/Home';
 import Register from './containers/Register/Register';
 import LogIn from './containers/LogIn/LogIn';
 import MainMenuParents from './containers/MainMenuParents/MainMenuParents';
-import QRGenerator from './components/QRGenerator/QRGenerator';
+import QRGenerator from './containers/QRGenerator/QRGenerator';
 
 function App() {
   return (
