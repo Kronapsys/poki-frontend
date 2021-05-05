@@ -24,7 +24,7 @@ const QRGenerator = () => {
                   {qr}  
                 </div>
 
-                <input className='input' type='text' name='name' title='Name' placeholder='Nombre persona autoriazada' lenght='30' />
+                {/* <input className='input' type='text' name='name' title='Name' placeholder='Nombre persona autoriazada' lenght='30' /> */}
 
                 <button className='btnQR' onClick={generateQR}> Generar QR </button>
                 
