@@ -1,9 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Crafty+Girls&family=Dawning+of+a+New+Day&display=swap');
 
-.btnStyle {
+.QRGenerator{
+    height: 100vh;
 
-    height: 2em;
-    width: 12em;
+    background-color: #CCEBF1;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.areaQR {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.QR {
+    /* border: 0.1em red solid; */
+    height: 128px;
+    width: 128px;
+}
+
+.btnQR {
+    height: 2.5em;
+    width: 14em;
     background-color: white;
     margin: 0.5em;
 
@@ -13,6 +37,7 @@
     justify-content: center;
 
     border-radius: 25em;
+    border: 0;
 
     font-family: 'Crafty Girls', cursive;
     font-weight: bold;
@@ -21,7 +46,7 @@
     cursor: pointer;
 }
 
-.btnStyle:hover {
+.btnQR:hover {
     background-color: #74B4E2;
     color: white;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);

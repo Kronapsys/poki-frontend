@@ -9,7 +9,7 @@ const MainMenuParents = () => {
                 <Btn nombre='Asistencia/ Retraso' destination=''/>
                 <Btn nombre='Tratamientos' destination=''/>
                 <Btn nombre='Alergias' destination=''/>
-                <Btn nombre='Generar QR' destination='QRCode'/>
+                <Btn nombre='Generar QR' destination='QRGenerator'/>
             </div>
             
         </div>
