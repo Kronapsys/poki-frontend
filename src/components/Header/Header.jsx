@@ -21,7 +21,7 @@ const Header = () => {
             </div>
 
             <div className="rightHeader">
-              <img className="optionsMenu" src={options} alt='options'/>
+              <img className="optionsMenuIcon" src={options} alt='options'/>
 
             </div>
 
