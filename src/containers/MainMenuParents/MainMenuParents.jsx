@@ -1,9 +1,13 @@
 import React from 'react';
 import './MainMenuParents.css';
 import Btn from '../../components/Btn/Btn';
+import Header from '../../components/Header/Header';
+
 
 const MainMenuParents = () => {
     return(
+        <>
+        <Header/>
         <div className='MainMenuParents'>
             <div className="areaMMP">
                 <Btn nombre='Asistencia/ Retraso' destination=''/>
@@ -13,6 +17,7 @@ const MainMenuParents = () => {
             </div>
             
         </div>
+        </>
     );
 };
 
