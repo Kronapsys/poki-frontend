@@ -1,4 +1,4 @@
-.MainMenuTeachers{
+.MainMenuTeachers {
     height: 100vh;
 
     background-color: #CCEBF1;
@@ -14,4 +14,10 @@
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    align-items: center;
+}
+
+.eventArea {
+    height: 4em;
+    
 }
