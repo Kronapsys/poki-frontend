@@ -1,0 +1,142 @@
+.childCard {
+    height: 11em;
+    width: 17em;
+    background-color: #e4eff0;
+
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 0em 1em 0em 1em;
+    box-shadow: 10px 5px 16px 5px rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+    font-family: 'Crafty Girls', cursive;
+    color: #74B4E2;
+}
+
+.topChildCard {
+    height: 2em;
+    width: 17em;
+
+    background-color: #D4EF9F;
+    border-radius: 0em 1em 0em 2em;
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.topLeft {
+
+}
+
+.topRight {
+
+}
+
+.midChildCard {
+    height: 7em;
+    display: flex;
+    flex-direction: row;
+}
+
+.photoAreaChildCard {
+    height: 7em;
+    width: 5em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photoChildCard {
+    height: 4.5em;
+    width: 4.5em;
+    border-radius: 25em;
+}
+
+.photo {
+    height: 4.5em;
+    width: 4.5em;
+    border-radius: 25em;
+}
+
+.infoChildCard {
+    width: 12em;
+}
+
+.nameAreaChildCard {
+    height: 5.5em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    text-align: start;
+}
+
+.nameChild {
+    height: 1em;
+}
+
+.surnamesChild {
+    height: 1em;
+}
+
+.extraInfoChildCard {
+    height: 1.5em;
+    display: flex;
+    flex-direction: row;
+}
+
+.botChildCard {
+    height: 2em;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #D4EF9F;
+    border-radius: 0em 2em 0em 1em;
+}
+
+.incidentIcon {
+    height: 2em;
+    width: 2em;
+}
+
+.incidentIconBtn {
+    height: 2em;
+    width: 2em;
+}
+
+.foodIcon {
+    height: 2em;
+    width: 2em;
+}
+
+.foodIconBtn {
+    height: 2em;
+    width: 2em;
+}
+
+.stoolIcon {
+    height: 2em;
+    width: 2em;
+}
+
+.stoolIconBtn {
+    height: 2em;
+    width: 2em;
+}
+
+.tutorialIcon {
+    height: 2em;
+    width: 2em;
+}
+
+.tutorialIconBtn {
+    height: 2em;
+    width: 2em;
+}

@@ -1,23 +1,20 @@
 import React from 'react';
 import './MainMenuTeachers.css';
-import Btn from '../../components/Btn/Btn';
-import Header from '../../components/Header/Header';
+import ChildCard from '../../components/ChildCard/ChildCard';
 
 const MainMenuTeachers = () => {
     return(
-        <>
-        <Header/>
-
+    
         <div className='MainMenuTeachers'>
             <div className="areaMMT">
+                <ChildCard/>
 
-                
 
 
             </div>
             
         </div>
-        </>
+    
     );
 };
 

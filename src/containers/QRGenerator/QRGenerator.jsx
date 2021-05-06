@@ -1,4 +1,4 @@
-import axios from 'axios';
+// import axios from 'axios';
 import React, {useState} from 'react';
 import QRCode from 'react-qr-code';
 import './QRGenerator.css';
