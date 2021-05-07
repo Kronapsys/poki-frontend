@@ -3,7 +3,6 @@ import React, {useState} from 'react';
 import QRCode from 'react-qr-code';
 import './QRGenerator.css';
 import Header from '../../components/Header/Header';
-// import Btn from '../../components/Btn/Btn';
 
 const QRGenerator = () => {
 
