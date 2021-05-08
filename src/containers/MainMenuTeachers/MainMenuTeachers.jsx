@@ -9,7 +9,6 @@ const MainMenuTeachers = () => {
     <div className="MainMenuTeachers">
       <div className="areaMMT">
         <ChildCard />
-        <ChildCard />
 
         <div className="eventArea">
           <Btn nombre="Crear evento" destination="" />

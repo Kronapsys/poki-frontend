@@ -18,6 +18,7 @@ const LogIn = (props) => {
     const [dataLogin, setLogin] = useState({
         email: "",
         password: "",
+        isTeacher: ""
     });
 
     // const [message, setMessage] = useState('');
@@ -54,7 +55,8 @@ const LogIn = (props) => {
         }
 
         if(dataLogin.isTeacher !== true) {
-            let result = await axios.post("http://localhost:3000/parents", body);
+            console.log(body);
+            let result = await axios.post("http://localhost:3000/auths/loginP", body);
                 props.dispatch({type: LOGIN, payload: result.data});
 
             history.push(`/mainMenuParents`);
@@ -62,8 +64,8 @@ const LogIn = (props) => {
 
 
         } else {
-            let result = await axios.post("http://localhost:3000/teachers", body);
-            props.dispatch({type: LOGIN, payload: result.data});
+            let result = await axios.post("http://localhost:3000/auths/loginT", body);
+                props.dispatch({type: LOGIN, payload: result.data});
 
             history.push(`/mainMenuTeachers`);
         }
