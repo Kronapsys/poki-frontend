@@ -16,3 +16,8 @@
     color: gray;
     margin: 1em;
 }
+
+.errorMessage{
+    color: red;
+    height: 1rem;
+}

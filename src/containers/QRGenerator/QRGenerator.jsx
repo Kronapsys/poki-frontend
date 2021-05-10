@@ -1,16 +1,20 @@
-// import axios from 'axios';
 import React, {useState} from 'react';
 import QRCode from 'react-qr-code';
 import './QRGenerator.css';
 import Header from '../../components/Header/Header';
+import axios from 'axios';
 
 const QRGenerator = () => {
 
     const [qr, setQr] = useState('');
 
+    let parentId = window.localStorage.getItem('parentId')
+
+    // let QRValue = axios.get(`http://localhost:3000/parents/${parentId}`);
+    
+
     const generateQR = async () => {
-        let QRValue = '5';
-        setQr(<QRCode value={QRValue} size={128} />)
+        setQr(<QRCode value={parentId} size={128} />)
     }
 
     return(

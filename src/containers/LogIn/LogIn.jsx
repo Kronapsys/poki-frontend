@@ -5,7 +5,8 @@ import {useHistory} from 'react-router-dom';
 import axios from "axios";
 import {LOGIN} from '../../redux/types/userType.js';
 import {connect} from 'react-redux';
-// import  checkError  from '../../utils/util';
+import  checkError  from '../../utils/validate';
+
 
 const LogIn = (props) => {
 
@@ -20,10 +21,28 @@ const LogIn = (props) => {
         password: "",
         isTeacher: false
     });
-    console.log(dataLogin);
-    // const [message, setMessage] = useState('');
+    
+    const [errors, setErrors] = useState({});
+    const [message, setMessage] = useState([]);
+
+    const styles = {
+        error: {
+            borderColor: '#c92432',
+            color: '#c92432',
+            background: '#fffafa',
+        },
+        correct: {}
+    }
 
     // Manejadores
+
+    // const handleState = (e) => {
+    //     setLogin({...dataLogin, [e.target.name]: e.target.value, [e.target.name]: e.target.value});
+    //     setMessage('')
+    //     if (Object.keys(errors).length > 0) 
+    //     setErrors(checkError({ ...dataLogin, [e.target.name]: e.target.value, [e.target.name]: e.target.value}, "register"));
+    // };
+
     const handleState = (event) => {
         setLogin({
             ...dataLogin,
@@ -48,14 +67,7 @@ const LogIn = (props) => {
 
         // Comprobación errores
 
-        // setMessage('');
-
-        // let errorMessage = checkError(dataLogin);
-        // setMessage(errorMessage);
-        // // console.log(errorMessage);
-        // if(errorMessage) {
-        //     return;
-        // }
+        
 
         let body = {
             email : dataLogin.email,
@@ -68,16 +80,15 @@ const LogIn = (props) => {
                 props.dispatch({type: LOGIN, payload: result.data});
 
             history.push(`/mainMenuParents`);
-            console.log(result.data);
+            window.localStorage.setItem('parentId', result.data.usuario.id)
         } else {
             let result = await axios.post("http://localhost:3000/auths/loginT", body);
                 props.dispatch({type: LOGIN, payload: result.data});
 
             history.push(`/mainMenuTeachers`);
+            window.localStorage.setItem('teacherId', result.data.usuario.id)
         }
     };
-
-    
 
     return(
         <div className='home'>
@@ -92,6 +103,10 @@ const LogIn = (props) => {
                 <div className='formLogIn'>
                     <input className='input' type='email' name='email' title='Email' 
                         placeholder='Correo electrónico' lenght='50' onChange={handleState} />
+
+                    <div className="errorMessage">
+                        <p>{message}</p>
+                    </div>
 
                     <input className='input' type='password' name='password' title='Password' 
                         placeholder='Contraseña' lenght='20' onChange={handleState} />
