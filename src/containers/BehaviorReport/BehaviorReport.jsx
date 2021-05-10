@@ -21,8 +21,6 @@ const BehaviorReport = () => {
         description : description.description
     }
 
-    console.log(body);
-
     const sendReport = async () => {
         await axios.post("http://localhost:3000/incidents-report", body);
 
