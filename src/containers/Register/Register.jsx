@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import './Register.css';
 import logo from '../../img/logo.png';
 import axios from 'axios';
 // import  checkError  from '../../utils/util';
-import { useHistory } from 'react-router-dom';
-import { REGISTER } from '../../redux/types/userType';
-import { connect } from 'react-redux';
+import {useHistory} from 'react-router-dom';
+import {REGISTER} from '../../redux/types/userType';
+import {connect} from 'react-redux';
 
 const Register = (props) => {
 
