@@ -6,6 +6,7 @@ import LogIn from './containers/LogIn/LogIn';
 import MainMenuParents from './containers/MainMenuParents/MainMenuParents';
 import QRGenerator from './containers/QRGenerator/QRGenerator';
 import MainMenuTeachers from './containers/MainMenuTeachers/MainMenuTeachers';
+import PreSelectIncident from './containers/PreSelectIncident/PreSelectincident';
 // import PublicRoutes from './routes/public.routes';
 // import { PrivateRoute } from './routes/helperRoutes';
 
@@ -23,6 +24,7 @@ function App() {
           <Route path='/mainMenuParents' exact component = {MainMenuParents}/>
           <Route path='/QRGenerator' exact component = {QRGenerator}/>
           <Route path='/mainMenuTeachers' exact component = {MainMenuTeachers}/>
+          <Route path='/preSelectIncident' exact component = {PreSelectIncident} />
         </Switch>
       
       </BrowserRouter>
