@@ -1,4 +1,4 @@
-.PreSelectIncident{
+.IncidentReport{
     height: 100vh;
 
     background-color: #CCEBF1;
@@ -9,7 +9,7 @@
     align-content: center;
 }
 
-.preSelectForm {
+.incidentReportForm {
     display: flex;
     flex-direction: column;
     justify-content: center;

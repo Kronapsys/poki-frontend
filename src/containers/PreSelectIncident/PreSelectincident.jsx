@@ -9,9 +9,9 @@ const PreSelectIncident = () => {
         <>
         <Header/>
         <div className='PreSelectIncident'>
-            <div className="areaMMP">
+            <div className="preSelectForm">
                 <Btn nombre='Incidente' destination='incidentReport'/>
-                <Btn nombre='Comportamiento' destination='comportamiendoReport'/>  
+                <Btn nombre='Comportamiento' destination='behaviorReport'/>  
             </div>
         </div>
         </>
