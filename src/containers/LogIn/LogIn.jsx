@@ -96,9 +96,9 @@ const LogIn = (props) => {
                     <input className='input' type='password' name='password' title='Password' 
                         placeholder='Contraseña' lenght='20' onChange={handleState} />
 
-                     <div className="checkBox" >
-                        <input type='checkbox' onChange={handleCheckbox} /> <p> Profesor ? </p>
-                     </div>   
+                    <div className="checkBox" >
+                        <input type='checkbox' onChange={handleCheckbox} /> <p> : ¿ Profesor ? </p>
+                    </div>   
                     
                 </div>
 
