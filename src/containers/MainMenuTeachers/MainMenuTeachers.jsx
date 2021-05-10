@@ -22,7 +22,7 @@ const MainMenuTeachers = () => {
 
     axios.get(`http://localhost:3000/teachers/${teacherId}`)
     .then(res=>{
-      console.log(res.data.childs);
+      // console.log(res.data.childs);
         setChilds(res.data.childs);
     })
 

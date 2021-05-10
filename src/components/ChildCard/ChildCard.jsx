@@ -13,8 +13,13 @@ const ChildCard = () => {
   let history = useHistory();
 
     const preSelectIncident = () => {
-        history.push(`/preSelectIncident`);
+      history.push(`/preSelectIncident`);
     };
+
+    const goFoodReport = () => {
+      history.push(`/foodReport`);
+
+    }
 
   return (
     <div className="childCard">
@@ -55,7 +60,7 @@ const ChildCard = () => {
             <img className='incidentIconBtn' src={incidentIcon} alt='incidentIcon' onClick={preSelectIncident} />
           </div>
           <div className="foodIcon icon">
-          <img className='foodIconBtn' src={foodIcon} alt='foodIcon' />
+          <img className='foodIconBtn' src={foodIcon} alt='foodIcon' onClick={goFoodReport}/>
           </div>
           <div className="stoolIcon icon">
           <img className='stoolIconBtn' src={poopIcon} alt='poopIcon' />

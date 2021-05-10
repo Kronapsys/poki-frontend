@@ -10,6 +10,7 @@ import PreSelectIncident from './containers/PreSelectIncident/PreSelectincident'
 import IncidentReport from './containers/IncidentReport/IncidentReport';
 import BehaviorReport from './containers/BehaviorReport/BehaviorReport';
 import CreateEvent from './containers/CreateEvent/CreateEvent';
+import FoodReport from './containers/FoodReport/FoodReport';
 // import PublicRoutes from './routes/public.routes';
 // import { PrivateRoute } from './routes/helperRoutes';
 
@@ -31,6 +32,7 @@ function App() {
           <Route path='/incidentReport' exact component = {IncidentReport} />
           <Route path='/behaviorReport' exact component = {BehaviorReport} />
           <Route path='/createEvent' exact component = {CreateEvent} />
+          <Route path='/foodReport' exact component = {FoodReport} />
         </Switch>
       
       </BrowserRouter>
