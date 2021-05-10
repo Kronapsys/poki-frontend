@@ -1,0 +1,22 @@
+.popUp {
+    background-color: rgba(0, 0, 0, 0.295);
+    height: 7em;
+    width: 17em;
+
+    position: absolute;
+    z-index: 5;
+
+    border-radius: 0em 1em 0em 1em;
+}
+
+.topPopUp {
+    background-color: black;
+    height: 1em;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.x {
+    height: 1em;
+    width: 1em;
+}

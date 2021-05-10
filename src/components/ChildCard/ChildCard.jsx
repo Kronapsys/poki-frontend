@@ -5,7 +5,7 @@ import foodIcon from '../../img/foodIcon.png';
 import poopIcon from '../../img/poopIcon.png';
 import tutorialIcon from '../../img/tutorial.png';
 import userIcon from '../../img/user.jpg';
-import x from '../../img/x.png';
+import Submenu from "../Submenu/Submenu";
 
 const ChildCard = () => {
   return (
@@ -20,15 +20,7 @@ const ChildCard = () => {
             </div>
         </div>
       <div className="midChildCard">
-        {/* <div className="popUp">
-          <div className="topPopUp">
-            <img className='x' src={x} alt='x' />
-
-          </div>
-          <div className="restPopUp">
-
-          </div>
-        </div> */}
+        <Submenu/>
         <div className="photoAreaChildCard">
             <div className="photoChildCard">
             <img className='photo' src={userIcon} alt='userIcon' />
