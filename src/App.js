@@ -11,6 +11,7 @@ import IncidentReport from './containers/IncidentReport/IncidentReport';
 import BehaviorReport from './containers/BehaviorReport/BehaviorReport';
 import CreateEvent from './containers/CreateEvent/CreateEvent';
 import FoodReport from './containers/FoodReport/FoodReport';
+import StoolReport from './containers/StoolReport/StoolReport';
 // import PublicRoutes from './routes/public.routes';
 // import { PrivateRoute } from './routes/helperRoutes';
 
@@ -33,6 +34,7 @@ function App() {
           <Route path='/behaviorReport' exact component = {BehaviorReport} />
           <Route path='/createEvent' exact component = {CreateEvent} />
           <Route path='/foodReport' exact component = {FoodReport} />
+          <Route path='/stoolReport' exact component = {StoolReport}/>
         </Switch>
       
       </BrowserRouter>

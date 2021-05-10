@@ -1,0 +1,44 @@
+.stoolReport{
+    height: 100vh;
+
+    background-color: #CCEBF1;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.stoolReportForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.checkBox {
+    height: 1em;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+    font-family: 'Crafty Girls', cursive;
+    font-weight: bold;
+    color: gray;
+    margin: 1em;
+}
+
+.checkboxLine {
+    height: 1.5em;
+    width: 10em;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: start
+}

@@ -18,8 +18,11 @@ const ChildCard = () => {
 
     const goFoodReport = () => {
       history.push(`/foodReport`);
+    };
 
-    }
+    const goStoolReport = () => {
+      history.push(`/stoolReport`);
+    };
 
   return (
     <div className="childCard">
@@ -63,7 +66,7 @@ const ChildCard = () => {
           <img className='foodIconBtn' src={foodIcon} alt='foodIcon' onClick={goFoodReport}/>
           </div>
           <div className="stoolIcon icon">
-          <img className='stoolIconBtn' src={poopIcon} alt='poopIcon' />
+          <img className='stoolIconBtn' src={poopIcon} alt='poopIcon' onClick={goStoolReport} />
           </div>
           <div className="tutorialIcon icon">
           <img className='tutorialIconBtn' src={tutorialIcon} alt='tutorialIcon' />
