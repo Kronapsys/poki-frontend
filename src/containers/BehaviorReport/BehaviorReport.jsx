@@ -25,6 +25,8 @@ const BehaviorReport = () => {
 
     const sendReport = async () => {
         await axios.post("http://localhost:3000/incidents-report", body);
+
+        history.push('/mainMenuTeachers')
     }
 
     const handleState = (event) => {
@@ -45,7 +47,6 @@ const BehaviorReport = () => {
             <div className="BehaviorReportForm">
                 <input className='input' type='textarea' name='description' title='description' placeholder='Descripción de lo sucedido' lenght='250' onChange={handleState} />
                 
-                {/* <Btn nombre='Enviar' onClick={sendReport} destination='mainMenuTeachers'/> */}
                 <button className='btnQR' onClick={sendReport}> Enviar </button>
 
             </div>
