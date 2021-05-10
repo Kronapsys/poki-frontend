@@ -18,9 +18,9 @@ const LogIn = (props) => {
     const [dataLogin, setLogin] = useState({
         email: "",
         password: "",
-        isTeacher: ""
+        isTeacher: false
     });
-
+    console.log(dataLogin);
     // const [message, setMessage] = useState('');
 
     // Manejadores
@@ -33,6 +33,15 @@ const LogIn = (props) => {
                     : event.target.value,
 
         });
+    };
+
+    const handleCheckbox = (event) => {
+        
+        if(event.target.checked === true) {
+            setLogin({...dataLogin, isTeacher: true})
+        }else {
+            setLogin({...dataLogin, isTeacher: false})
+        }
     };
 
     const logeame = async () => {
@@ -50,8 +59,7 @@ const LogIn = (props) => {
 
         let body = {
             email : dataLogin.email,
-            password : dataLogin.password,
-            isTeacher: dataLogin.isTeacher
+            password : dataLogin.password
         }
 
         if(dataLogin.isTeacher !== true) {
@@ -61,8 +69,6 @@ const LogIn = (props) => {
 
             history.push(`/mainMenuParents`);
             console.log(result.data);
-
-
         } else {
             let result = await axios.post("http://localhost:3000/auths/loginT", body);
                 props.dispatch({type: LOGIN, payload: result.data});
@@ -70,6 +76,8 @@ const LogIn = (props) => {
             history.push(`/mainMenuTeachers`);
         }
     };
+
+    
 
     return(
         <div className='home'>
@@ -87,6 +95,11 @@ const LogIn = (props) => {
 
                     <input className='input' type='password' name='password' title='Password' 
                         placeholder='Contraseña' lenght='20' onChange={handleState} />
+
+                     <div className="checkBox" >
+                        <input type='checkbox' onChange={handleCheckbox} /> <p> Profesor ? </p>
+                     </div>   
+                    
                 </div>
 
                 <div className='formButtons'>
