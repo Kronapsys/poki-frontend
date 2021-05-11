@@ -27,7 +27,6 @@ const MainMenuTeachers = () => {
               surname1={child.surname1}
               surname2={child.surname2}
             />
-            
           ))}
           <div className="eventArea">
             <Btn nombre="Crear evento" destination="createEvent" />
