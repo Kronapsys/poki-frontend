@@ -107,6 +107,9 @@ const LogIn = (props) => {
             lenght="20"
             onChange={handleState}
           />
+          <div className="errorMessage">
+            <p className="errorStyle">{message}</p>
+          </div>
 
           <div className="checkBox">
             <input type="checkbox" onChange={handleCheckbox} />{" "}
