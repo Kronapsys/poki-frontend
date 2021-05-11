@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./MainMenuTeachers.css";
 import ChildCard from "../../components/ChildCard/ChildCard";
 import Btn from "../../components/Btn/Btn";
@@ -8,15 +8,13 @@ import Header from "../../components/Header/Header";
 const MainMenuTeachers = () => {
   let teacherId = window.localStorage.getItem("teacherId");
 
-  let childs = [];
+  const [childs, setChilds] = useState([]);
   
-  const setChilds = (childs) => {
-    childs.push(childs);
-  };
-
-  axios.get(`http://localhost:3000/teachers/${teacherId}`).then((res) => {
-    setChilds(res.data.childs);
-  });
+  useEffect(() => {
+    axios.get(`http://localhost:3000/teachers/${teacherId}`).then((res) => {
+      setChilds(res.data.childs);
+    });
+  },[]);
 
   return (
     
@@ -24,8 +22,8 @@ const MainMenuTeachers = () => {
     <Header/>
     <div className="MainMenuTeachers">
       <div className="areaMMT">
+        {childs.map(child => <ChildCard name={child.name} surname1={child.surname1} surname2={child.surname2} />)}
         
-        <ChildCard />
 
         <div className="eventArea">
           <Btn nombre="Crear evento" destination="createEvent" />

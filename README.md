@@ -65,7 +65,8 @@ También he utilizado la aplicación de Responsively, para poder hacer la APP re
 - redux-localstorage-simple</br>
 
 # Futuras actualizaciones :
-- Acabar todo lo que falta de funcionalidades básicas.
+- Implementar el control de errores en login y registro.
+- Acabar todo lo que falta de funcionalidades básicas
 - Agregar el menu de opciones para que se pueda modificar los perfiles y que los padres puedan completar información extra del niño, como por ejemplo sus alergias o si toman algun tipo de medicación crónica o puntual, indicarlo para que le llegue esa información al profesor.
 - Mejorar la seguridad en la generación del QR.
 - Mejorar el sistema de los reports, haciendo que sea más rápido y cómodo generarlo haciendo que salgan desplegables como por ejemplo en el report de la comida, que no tengas que escribir si el report es de almuerzo, comida o merienda.

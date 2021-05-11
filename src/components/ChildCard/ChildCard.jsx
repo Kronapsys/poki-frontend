@@ -7,7 +7,7 @@ import tutorialIcon from "../../img/tutorial.png";
 import userIcon from "../../img/user.jpg";
 import { useHistory } from "react-router-dom";
 
-const ChildCard = () => {
+const ChildCard = (props) => {
   let history = useHistory();
 
   const preSelectIncident = () => {
@@ -43,10 +43,10 @@ const ChildCard = () => {
         <div className="infoChildCard">
           <div className="nameAreaChildCard">
             <div className="nameChild">
-              <p> </p>
+              <p> {props.name} </p>
             </div>
             <div className="surnamesChild">
-              <p> </p>
+              <p> {props.surname1} {props.surname2} </p>
             </div>
           </div>
 
