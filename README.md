@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# POKI (APP)
+ Esta app está dirigida a guarderías para que se use como un herramienta de trabajo diaria que aporta rapidez y fluidez en la comunicacion "padre-profesor" y un extra en seguridad a la hora que alguno de los tutores legales del niño/a no puediera ir a recogerlo.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Con ella, los profesores podrán informar de:
+- Incidentes:
+    - Accidentes (golpes, tropezones, heridas, etc..)
+    - Mal comportamiento 
 
-## Available Scripts
+- Comidas:
+    - Almuerzo
+    - Comida
+    - Merienda
 
-In the project directory, you can run:
+- Deposiciones:
+    - Tipo
+    - Color
+    - Sangre/ Parásitos/ Mocos en heces
 
-### `npm start`
+- Convocar tutoria.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Crear eventos.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+A la misma vez los padres podrán consultar toda esa información de sus hijos, sabiendo en todo momento si algo va mal, evitando las colas que se forman a la recogida de los niños de los centros infantiles/ guarderias. </br>
 
-### `npm test`
+# Para poder empezar : 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+La APP estará deployada en Heroku, si aún así prefieres descargarla y usarla por tu cuenta:
+1. Instalar las dependencias citadas mas abajo.
+2. Arranca el servidor con el comando: npm start
 
-### `npm run build`
+# Organizacion de la faena :
+He utilizado diferentes herramientas para organizarme: </br>
+Con AdobeXD hice un prototipado para hacerme una idea de que vistas iba a necesitar y como organizarlas </br>
+![adobeXD](https://i.imgur.com/HYt6UDV.png) </br>
+Utilicé MIRO para el diseño de la BBDD, pensar en los diagramas de flujo que podía tener mi APP, pensar en los colores que iba a utilizar, etc... ejemplos: </br>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![colores](https://i.imgur.com/trcDblh.png) </br>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+El resto de organización ya fue un poco sobre papel por la falta de tiempo, al igual que algunos diseños 😅
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![ejemplo_diseños](https://i.imgur.com/j75OnpP.jpg) </br>
 
-### `npm run eject`
+También he utilizado la aplicación de Responsively, para poder hacer la APP responsive y tener de una forma rápida un vistazo de las vistas y ver si realmente es 100% responsive o no.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![responsively_1](https://i.imgur.com/noAtect.png)
+![responsively_2](https://i.imgur.com/GdsxRjP.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# Tecnologías usadas :
+![JS](https://i.imgur.com/lDoNwKn.png)
+![HTML5 & CSS3](https://i.imgur.com/YGFHOGJ.png)
+![React & Redux](https://i.imgur.com/MFdnMMW.png)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# Dependencias usadas :
+- axios</br>
+- moment</br>
+- react</br>
+- react-datetime-picker</br>
+- react-dom</br>
+- react-qr-code</br>
+- react-redux</br>
+- react-router-dom</br>
+- react-scripts</br>
+- redux</br>
+- redux-localstorage-simple</br>
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Futuras actualizaciones :
+- Acabar todo lo que falta de funcionalidades básicas.
+- Agregar el menu de opciones para que se pueda modificar los perfiles y que los padres puedan completar información extra del niño, como por ejemplo sus alergias o si toman algun tipo de medicación crónica o puntual, indicarlo para que le llegue esa información al profesor.
+- Mejorar la seguridad en la generación del QR.
+- Mejorar el sistema de los reports, haciendo que sea más rápido y cómodo generarlo haciendo que salgan desplegables como por ejemplo en el report de la comida, que no tengas que escribir si el report es de almuerzo, comida o merienda.
+- Mejorar el sistema de reports para que autogenere los campos de día y hora.
+- Integrar el menú semanal del comedor para que en caso que un niño tenga alergia a algo del menú, salte un aviso al profesor.
+- Mejorar las cards de los niños.
+- Integrar en la parte de arriba de la card los números de teléfono de los padres y al pinchar sobre ellos, que llame.
+- Integrar un botón de emergencias con los teléfonos más importantes (bomberos, emergencias, etc... )

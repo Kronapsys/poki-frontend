@@ -30,7 +30,9 @@ const LogIn = (props) => {
       [e.target.name]: e.target.value,
       [e.target.name]: e.target.value,
     });
+
     setMessage("");
+
     if (Object.keys(errors).length > 0)
       setErrors(
         checkError(
@@ -119,8 +121,7 @@ const LogIn = (props) => {
 
         <div className="formButtons">
           <button className="btnQR" onClick={logeame}>
-            {" "}
-            Entrar{" "}
+            Entrar
           </button>
         </div>
       </div>

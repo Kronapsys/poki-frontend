@@ -3,12 +3,13 @@ import "./MainMenuTeachers.css";
 import ChildCard from "../../components/ChildCard/ChildCard";
 import Btn from "../../components/Btn/Btn";
 import axios from "axios";
+import Header from "../../components/Header/Header";
 
 const MainMenuTeachers = () => {
   let teacherId = window.localStorage.getItem("teacherId");
 
   let childs = [];
-
+  
   const setChilds = (childs) => {
     childs.push(childs);
   };
@@ -18,6 +19,9 @@ const MainMenuTeachers = () => {
   });
 
   return (
+    
+    <>
+    <Header/>
     <div className="MainMenuTeachers">
       <div className="areaMMT">
         
@@ -28,6 +32,7 @@ const MainMenuTeachers = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

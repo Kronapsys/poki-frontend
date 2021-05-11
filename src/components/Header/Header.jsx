@@ -3,13 +3,17 @@ import "./Header.css";
 import logo from "../../img/logo.png";
 import options from "../../img/options.png";
 import { useHistory } from "react-router-dom";
+import { connect } from "react-redux";
+import { LOGOUT } from "../../redux/types/userType.js";
 
-const Header = () => {
+
+const Header = (props) => {
   let history = useHistory();
 
-  const homeRedirect = () => {
-    history.push(`/`);
-  };
+  const logOut = () => {
+    props.dispatch({ type: LOGOUT, payload: {} });
+    history.push("/");
+};
 
   return (
     <div className="header">
@@ -18,7 +22,7 @@ const Header = () => {
           className="logoHeader"
           src={logo}
           alt="logo"
-          onClick={homeRedirect}
+          onClick={logOut}
         />
       </div>
 
@@ -29,4 +33,10 @@ const Header = () => {
   );
 };
 
-export default Header;
+const mapStateToProps = (state) => {
+  return {
+      user: state.userReducer.user,
+  };
+};
+
+export default connect(mapStateToProps)(Header);
