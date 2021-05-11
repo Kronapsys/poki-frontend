@@ -3,7 +3,6 @@ import './MainMenuParents.css';
 import Btn from '../../components/Btn/Btn';
 import Header from '../../components/Header/Header';
 
-
 const MainMenuParents = () => {
     return(
         <>
@@ -15,7 +14,6 @@ const MainMenuParents = () => {
                 <Btn nombre='Alergias' destination=''/>
                 <Btn nombre='Generar QR' destination='QRGenerator'/>
             </div>
-            
         </div>
         </>
     );

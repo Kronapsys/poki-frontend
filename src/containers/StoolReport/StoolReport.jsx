@@ -43,15 +43,11 @@ const StoolReport = () => {
         });
     };
 
-    // const handleCheckbox = (event) => {
-    //     if(event.target.checked === true) {
-    //         setReport({...report, blood: true, parasites: true, mucus: true})
-    //     }else {
-    //         setReport({...report, blood: false, parasites: false, mucus: false})
-    //     }
-    // };
     const handleCheckbox = (e) => {
-        setReport({...report, [e.target.name] : e.target.checked, [e.target.blood] : e.target.value})
+        setReport({...report, [e.target.name] : e.target.checked, [e.target.blood] : e.target.value,
+                              [e.target.name] : e.target.checked, [e.target.parasites] : e.target.value,
+                              [e.target.name] : e.target.checked, [e.target.mucus] : e.target.value
+        });
     };
 
     return(

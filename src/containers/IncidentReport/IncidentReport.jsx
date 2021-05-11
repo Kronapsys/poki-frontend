@@ -5,10 +5,7 @@ import {useHistory} from 'react-router-dom';
 import axios from "axios";
 
 
-
 const IncidentReport = () => {
-    
-
     let history = useHistory();
 
     const [report, setReport] = useState({
