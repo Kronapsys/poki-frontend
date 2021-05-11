@@ -68,10 +68,12 @@ También he utilizado la aplicación de Responsively, para poder hacer la APP re
 - Implementar el control de errores en login y registro.
 - Acabar todo lo que falta de funcionalidades básicas
 - Agregar el menu de opciones para que se pueda modificar los perfiles y que los padres puedan completar información extra del niño, como por ejemplo sus alergias o si toman algun tipo de medicación crónica o puntual, indicarlo para que le llegue esa información al profesor.
-- Mejorar la seguridad en la generación del QR.
+- Mejorar la seguridad en la generación del QR e integrar un botón para compartir el código vía WhatsApp, Telegram, etc...
 - Mejorar el sistema de los reports, haciendo que sea más rápido y cómodo generarlo haciendo que salgan desplegables como por ejemplo en el report de la comida, que no tengas que escribir si el report es de almuerzo, comida o merienda.
 - Mejorar el sistema de reports para que autogenere los campos de día y hora.
 - Integrar el menú semanal del comedor para que en caso que un niño tenga alergia a algo del menú, salte un aviso al profesor.
-- Mejorar las cards de los niños.
-- Integrar en la parte de arriba de la card los números de teléfono de los padres y al pinchar sobre ellos, que llame.
+- Mejorar las cards de los niños :
+    - Integrar los 2 botones para que te muestre información extrar sobre el niño (alergias y medicaciones).
+    - Integrar en la parte de arriba de la card los números de teléfono de los padres y al pinchar sobre ellos, que llame.
+    - Integrar la funcionalidad de las fotos.
 - Integrar un botón de emergencias con los teléfonos más importantes (bomberos, emergencias, etc... )

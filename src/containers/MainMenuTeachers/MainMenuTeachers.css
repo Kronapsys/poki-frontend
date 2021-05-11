@@ -10,14 +10,20 @@
 }
 
 .areaMMT {
+    width: 23em;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-content: center;
     align-items: center;
+
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 .eventArea {
     height: 4em;
-    
 }
